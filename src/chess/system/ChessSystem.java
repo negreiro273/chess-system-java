@@ -3,9 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package chess.system;
-
-import boardgame.Position;
-
 /**
  *
  * @author 90913370100
@@ -17,11 +14,6 @@ public class ChessSystem {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
-        Position pos = new Position(3, 5);
-        System.out.println(pos);
-        
-        
     }
     
 }
