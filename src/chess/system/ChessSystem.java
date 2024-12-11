@@ -25,6 +25,8 @@ public class ChessSystem {
         ChessMatch chessMatch = new ChessMatch();
         Scanner sc = new Scanner(System.in);
         
+        
+                
         while(true){       
             try {
                     UI.clearScreen();
