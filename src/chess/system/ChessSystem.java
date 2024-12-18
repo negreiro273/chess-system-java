@@ -31,7 +31,7 @@ public class ChessSystem {
         
         
                 
-        while(true){       
+        while(!chessMatch.getcheckMate()){       
             try {
                     UI.clearScreen();
                     UI.printMatch(chessMatch,captured);
@@ -53,6 +53,9 @@ public class ChessSystem {
                       captured.add(capturedPiece);
                     }
                     
+                    
+                    
+                    
 
             } catch (ChessException e) {
                 
@@ -68,7 +71,8 @@ public class ChessSystem {
    
 
         }
-        
+        UI.clearScreen();
+        UI.printMatch(chessMatch, captured);
         
         
     }
