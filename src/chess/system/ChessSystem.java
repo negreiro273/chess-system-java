@@ -53,7 +53,11 @@ public class ChessSystem {
                       captured.add(capturedPiece);
                     }
                     
-                    
+                   if(chessMatch != null) {
+                       System.out.println("Enter piece for Promotion (B/N/R/Q): ");  
+                       String type = sc.nextLine();
+                       chessMatch.replacePromotedPiece(type);
+                   }
                     
                     
 
