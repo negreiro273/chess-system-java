@@ -55,7 +55,15 @@ public class ChessSystem {
                     
                    if(chessMatch != null) {
                        System.out.println("Enter piece for Promotion (B/N/R/Q): ");  
-                       String type = sc.nextLine();
+                       String type = sc.nextLine().toUpperCase();
+                       while(!type.equals("B")&&
+                               !type.equals("N")&&
+                                 !type.equals("R")&&
+                                   !type.equals("Q")){  
+                       
+                          type = sc.nextLine().toUpperCase();
+                           
+                       }
                        chessMatch.replacePromotedPiece(type);
                    }
                     
