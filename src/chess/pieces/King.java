@@ -122,15 +122,16 @@ public class King extends ChessPiece{
                  mat[position.getRow()][position.getColumn() - 2] = true;               
                }
            
+             }
              
-             
-         }
+            }
          
          
          
         return mat;
     }
-    
-    
-    
 }
+
+    
+    
+
